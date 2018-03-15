@@ -1,0 +1,12 @@
+
+.header .section-contact {
+    display: block;
+    width: auto;
+    text-align: left;
+    padding: 0 32px;
+    border-left: 2px solid #CFD8DC;
+}
+
+.main .section-contact {
+    display: none;
+}

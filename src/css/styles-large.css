@@ -1,0 +1,30 @@
+.header {
+}
+
+.header .brand-title {
+    margin-bottom: 0;
+}
+
+.header .brand-logo {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 0;
+}
+
+.header .header-nav {
+    width: 300px;
+    align-self:  stretch;
+}
+
+.nav-tabs {
+    padding-left: 0;
+    border-left: 1px solid #CFD8DC;
+}
+.nav-tabs li {
+    width: 100%;
+}
+
+.section-banner {
+    height: 400px;
+}
+
