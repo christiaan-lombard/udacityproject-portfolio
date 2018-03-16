@@ -1,3 +1,23 @@
+/**
+
+    Medium Styles
+
+    min-width: 580px
+
+    Targets medium devices.
+
+    Author: Christiaan Lombard
+
+*/
+
+/**
+
+    Header Overrides
+
+    The navigation is more narrow allowing
+    for an enlarged logo.
+
+*/
 .header .logo {
     width: 156px;
     height: 156px;
@@ -18,6 +38,15 @@
     padding-left: 256px;
 }
 
+
+/**
+
+    Contact Box Overrides
+
+    The contact box is now narrow
+    and placed over the banner
+
+*/
 .main .contact-box {
     position: absolute;
     right: 0;

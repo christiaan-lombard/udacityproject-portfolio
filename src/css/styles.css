@@ -232,9 +232,9 @@ a:hover {
 
 /**
 
-    Banner
+    Banner Section
 
-    A banner image
+    A banner full-width image
 
 
 */
@@ -249,7 +249,7 @@ a:hover {
 
 /**
 
-    Projects
+    Projects Section
 
     Cards containing project info and project image.
     Elevates on hover.
@@ -285,10 +285,6 @@ a:hover {
     margin: 0;
 }
 
-.project-description {
-
-}
-
 .project-link {
     display: block;
     line-height: 36px;
@@ -301,11 +297,11 @@ a:hover {
 
 /**
 
-About
+    About Section
+
+    Contains text with an image
 
 */
-
-
 .section-about {
     display: flex;
     flex-flow: row wrap;
@@ -335,10 +331,11 @@ About
 
 /**
 
-Footer
+    Footer
+
+    Nothing here really
 
 */
-
 .footer {
     /* background-color: #CFD8DC; */
     text-align: center;

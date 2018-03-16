@@ -1,4 +1,26 @@
+/**
 
+    X-Large Styles
+
+    min-width: 1200px
+
+    Targets large devices.
+
+    Author: Christiaan Lombard
+
+*/
+
+
+/**
+
+    Contact Box Overrides
+
+    The main contact box is hidden
+    and the contact box inside the header
+    is revealed.
+
+
+*/
 .header .contact-box {
     display: block;
     width: auto;

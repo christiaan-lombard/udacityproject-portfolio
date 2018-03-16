@@ -1,4 +1,24 @@
+/**
 
+    Large Styles
+
+    min-width: 920px
+
+    Targets large devices.
+
+    Author: Christiaan Lombard
+
+*/
+
+
+/**
+
+    Header Overrides
+
+    The navigation is moved next to the
+    title and logo.
+
+*/
 .header .title {
     margin-bottom: 0;
 }
@@ -18,10 +38,18 @@
     padding-left: 0;
     border-left: 1px solid #CFD8DC;
 }
+
 .nav-tabs li {
     width: 100%;
 }
 
+/**
+
+    Banner Overrides
+
+    The banner is enlarged.
+
+*/
 .section-banner {
     height: 400px;
 }
