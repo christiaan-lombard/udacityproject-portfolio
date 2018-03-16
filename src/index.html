@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Christiaan Lombard | Portfolio</title>
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:300,400,500,700,900" rel="stylesheet"> -->
+    <!-- Link Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Patua+One" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles-medium.css" media="screen and (min-width: 580px)">
     <link rel="stylesheet" href="css/styles-large.css" media="screen and (min-width: 920px)">
@@ -16,13 +19,19 @@
 
 </head>
 <body>
-    
-    <header class="section header brand contain">
 
-        <img class="brand-logo" src="http://via.placeholder.com/192x192" alt="Handsome Man">
-        <h1 class="brand-title">Christiaan Lombard<br><small>Web Artisan</small></h1>
+    <!-- Header -->
+    <header id="header" class="header brand contain">
 
-        <aside class="section section-contact">
+        <!-- Logo, Title and Slogan -->
+        <img class="logo" src="images/bw_christiaan.jpg" alt="Handsome Man">
+        <h1 class="title">Christiaan Lombard<br><small>Web Artisan</small></h1>
+
+        <!--
+            Contact Box 1
+            This is only shown on large devices
+        -->
+        <aside class="contact-box" aria-hidden="true">
             <a href="https://github.com/christiaan-lombard" class="contact-link" target="_blank">
                 <i class="fa fa-github" aria-hidden="true">&nbsp;</i>/christiaan-lombard
             </a>
@@ -30,61 +39,170 @@
                 <i class="fa fa-linkedin-square" aria-hidden="true">&nbsp;</i>in/christiaan
             </a>
         </aside>
-        
-        <nav class="header-nav">
+
+        <!-- Main Navigation -->
+        <nav class="nav">
             <ul class="nav-tabs">
-                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#header" class="active">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#experience">About Me</a></li>
             </ul>
         </nav>
+
     </header>
-    
-    <main class="section main">
-        
-        <aside class="section section-contact">
-            <a href="https://github.com/christiaan-lombard" class="contact-link" target="_blank">
+    <!-- Header END -->
+
+
+    <!-- Main -->
+    <main class="main">
+
+        <!--
+            Contact Box 2
+            This is only shown on smaller devices
+        -->
+        <aside class="contact-box">
+            <a class="contact-link" href="https://github.com/christiaan-lombard" target="_blank">
                 <i class="fa fa-github" aria-hidden="true">&nbsp;</i> /christiaanlombard
             </a>
-            <a href="https://www.linkedin.com/in/christiaan-lombard-32317a89/" class="contact-link" target="_blank">
+            <a class="contact-link" href="https://www.linkedin.com/in/christiaan-lombard-32317a89/" target="_blank">
                 <i class="fa fa-linkedin-square" aria-hidden="true">&nbsp;</i> in/christiaan
             </a>
         </aside>
-    
-        <section class="section section-banner">
-    
+
+        <!--
+            Banner Section
+            Uses full-width background image
+        -->
+        <section class="section-banner">
         </section>
+        <!-- Banner Section END -->
 
+        <!-- Projects Section -->
         <section class="section section-projects contain">
-            <h2 class="section-title">Projects</h2>
 
-            <div class="projects-container">
+            <h2 class="section-title">Featured Projects</h2>
 
-                <article class="projects-article">
-                    <img src="" alt="" class="project-image">
-                    <h3 class="project-title"></h3>
-                    <a href="" class="project-link"></a>
-                </article>
-                <article class="projects-article">
-                    <img src="" alt="" class="project-image">
-                    <h3 class="project-title"></h3>
-                    <a href="" class="project-link"></a>
-                </article>
-                <article class="projects-article">
-                    <img src="" alt="" class="project-image">
-                    <h3 class="project-title"></h3>
-                    <a href="" class="project-link"></a>
-                </article>
+            <!-- TODO: insert real projects -->
 
+            <!-- Project 1 -->
+            <article class="project-article">
+
+                <div class="project-content">
+                    <h3 class="project-title">Entertainment Center</h3>
+                    <p class="project-description">
+                        Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                        rhoncus, sem quam semper libero, sit amet
+                        adipiscing sem neque sed ipsum.
+                        <br><small>Photo by Slava Keyzman on Unsplash</small>
+                    </p>
+                    <a href="" class="project-link">
+                        <i class="fa fa-github" aria-hidden="true">&nbsp;</i> /christiaanlombard
+                    </a>
+                </div>
+
+                <img src="http://via.placeholder.com/320x240"
+                        alt="Project Image" class="project-image">
+
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-article">
+
+                <div class="project-content">
+                    <h3 class="project-title">Entertainment Center</h3>
+                    <p class="project-description">
+                        Lorem ipsum dolor sit amet, consectetuer
+                        adipiscing elit. Aenean commodo ligula eget dolor.
+                        <br><small>Photo by Kevin Bhagat on Unsplash</small>
+                    </p>
+                    <a href="" class="project-link">
+                        <i class="fa fa-github" aria-hidden="true">&nbsp;</i> /christiaanlombard
+                    </a>
+                </div>
+
+                <img src="http://via.placeholder.com/320x240"
+                        alt="Project Image" class="project-image">
+
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-article">
+
+                <div class="project-content">
+                    <h3 class="project-title">Entertainment Center</h3>
+                    <p class="project-description">
+                        Donec vitae sapien ut libero venenatis faucibus.
+                        Nullam quis ante. Etiam sit amet orci eget eros
+                        faucibus tincidunt. Duis leo.
+                        <br><small>Photo by Luca Bravo on Unsplash</small>
+                    </p>
+                    <a href="" class="project-link">
+                        <i class="fa fa-github" aria-hidden="true">&nbsp;</i> /christiaanlombard
+                    </a>
+                </div>
+
+                <img src="http://via.placeholder.com/320x240"
+                        alt="Project Image" class="project-image">
+
+            </article>
+
+        </section>
+        <!-- Projects Section END -->
+
+        <hr class="section-divider contain">
+
+        <!-- About Section -->
+        <article class="section section-about contain dark">
+
+            <h2 class="section-title">About</h2>
+
+            <div class="about-content">
+
+                <!-- TODO: replace about content -->
+
+                <p>
+                    Aenean vulputate eleifend tellus. Aenean leo ligula,
+                    porttitor eu, consequat vitae, eleifend ac, enim.
+                    Aliquam lorem ante, dapibus in, viverra quis, feugiat
+                    a, tellus. Phasellus viverra nulla ut metus varius
+                    laoreet. Quisque rutrum. Aenean imperdiet. Etiam
+                    ultricies nisi vel augue. Curabitur ullamcorper
+                    ultricies nisi. Nam eget dui.
+                </p>
+                <p>
+                    Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                    rhoncus, sem quam semper libero, sit amet adipiscing
+                    sem neque sed ipsum. Nam quam nunc, blandit vel,
+                    luctus pulvinar, hendrerit id, lorem. Maecenas nec
+                    odio et ante tincidunt tempus. Donec vitae sapien
+                    ut libero venenatis faucibus. Nullam quis ante. Etiam
+                    sit amet orci eget eros faucibus tincidunt. Duis leo.
+                    Sed fringilla mauris sit amet nibh. Donec sodales
+                    sagittis magna. Sed consequat, leo eget bibendum
+                    sodales, augue velit cursus nunc.
+                </p>
             </div>
 
-        </section>
+            <div class="about-image">
+                <img src="http://via.placeholder.com/512x512" alt="About Image">
+            </div>
+
+
+        </article>
+        <!-- About Section END -->
+
+        <hr class="section-divider contain">
 
 
     </main>
-    <footer class="footer">
+    <!-- Main END -->
 
+    <!-- Footer -->
+    <footer class="section footer contain">
+        <p>&copy; Christiaan Lombard 2018</p>
     </footer>
+    <!-- Footer END -->
 
 </body>
 </html>

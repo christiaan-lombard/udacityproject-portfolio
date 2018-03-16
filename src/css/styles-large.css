@@ -1,17 +1,15 @@
-.header {
-}
 
-.header .brand-title {
+.header .title {
     margin-bottom: 0;
 }
 
-.header .brand-logo {
+.header .logo {
     width: 128px;
     height: 128px;
     margin-bottom: 0;
 }
 
-.header .header-nav {
+.header .nav {
     width: 300px;
     align-self:  stretch;
 }

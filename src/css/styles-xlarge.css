@@ -1,5 +1,5 @@
 
-.header .section-contact {
+.header .contact-box {
     display: block;
     width: auto;
     text-align: left;
@@ -7,6 +7,6 @@
     border-left: 2px solid #CFD8DC;
 }
 
-.main .section-contact {
+.main .contact-box {
     display: none;
 }

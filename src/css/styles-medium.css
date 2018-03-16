@@ -1,16 +1,16 @@
-.brand .brand-logo {
+.header .logo {
     width: 156px;
     height: 156px;
     margin-bottom: -36px;
 }
 
-.brand .brand-title {
+.header .title {
     text-align: right;
     padding-right: 32px;
     font-size: 40px;
 }
 
-.brand .brand-title small {
+.header .title small {
     font-size: 18px;
 }
 
@@ -18,7 +18,7 @@
     padding-left: 256px;
 }
 
-.main .section-contact {
+.main .contact-box {
     position: absolute;
     right: 0;
     top: 0;

@@ -1,16 +1,25 @@
+/**
+
+    Main Styles
+
+    Targets small devices. See styles-small,
+    styles-medium, styles-large and styles-xlarge
+    for large device overrides.
+
+    Author: Christiaan Lombard
+
+*/
 
 
 /**
     User Agent Overrides
 */
-
 html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    /* font-family: 'Lato', sans-serif; */
     font-family: 'Open Sans', sans-serif;
-    background-color: #f5f5f5;    
+    background-color: #f5f5f5;
     font-size: 14px;
 }
 
@@ -19,8 +28,8 @@ img {
 }
 
 h1, h2, h3, h4, h5 {
-    /* font-family: 'Raleway', sans-serif; */
     font-family: 'Patua One', cursive;
+    font-weight: normal;
 }
 
 a {
@@ -33,11 +42,14 @@ a:hover {
     text-decoration: underline;
 }
 
+
 /**
     Shared Classes
+
+    .section - Sections have default padding and border
+    .contain - Sections centered on large devices
+
 */
-
-
 .contain {
     max-width: 1200px;
     margin-left: auto;
@@ -45,21 +57,42 @@ a:hover {
 }
 
 .section {
+    padding: 24px 0;
     width: 100%;
     position: relative;
     box-sizing: border-box;
+    border-left: 1px solid #CFD8DC;
+    border-right: 1px solid #CFD8DC;
+}
+
+.section.dark {
+    background-color: #546E7A;
+    color: white;
 }
 
 .section-title {
     font-size: 32px;
+    width: 100%;
+    text-align: center;
 }
+
+.section-divider {
+    height: 18px;
+    background-color: #E0E0E0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
 
 
 
 /**
     Header
-*/
 
+    The header contains branding and main navigation
+
+*/
 .header {
     display: flex;
     flex-flow: row wrap;
@@ -67,28 +100,13 @@ a:hover {
     justify-content: center;
     width: 100%;
     color: #212121;
-    border: 1px solid #CFD8DC;
-    border-top: none;
-    /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
-    /* margin-bottom: 6px; */
+    box-sizing: border-box;
+
+    border-left: 1px solid #CFD8DC;
+    border-right: 1px solid #CFD8DC;
 }
 
-.header-nav {
-    width: 100%;
-}
-
-
-
-/*
-
-Brand
-
-
-
-*/
-
-
-.brand .brand-logo {
+.header .logo {
     border-radius: 50%;
     padding: 12px;
     width: 128px;
@@ -96,14 +114,13 @@ Brand
     box-sizing: border-box;
 }
 
-.brand .brand-title {
+.header .title {
     font-size: 36x;
     text-align: center;
     flex: 1 1 auto;
     margin: 0;
     margin-bottom: 6px;
     line-height: 36px;
-    /* text-transform: uppercase; */
 }
 
 .brand .brand-title small {
@@ -114,8 +131,14 @@ Brand
 
 /**
     Main Navigation
-*/
 
+    Displays as columns by default,
+    rows for larger devices.
+
+*/
+.header .nav {
+    width: 100%;
+}
 
 .nav-tabs {
     display: flex;
@@ -142,6 +165,7 @@ Brand
     color: #212121;
     font-weight: 600;
 }
+
 .nav-tabs li a.active {
     border-bottom: 2px solid #90A4AE;
 }
@@ -150,41 +174,57 @@ Brand
     background-color: #ECEFF1;
 }
 
+
 /**
 
-    Contact
+    Main
+
+    The main content area between
+    the header and footer
 
 */
+.main {
+    position: relative;
+}
 
-.section-contact {
+
+/**
+
+    Contact Box
+
+    Contact boxes contain social links.
+    Two contact boxes exist and is
+    shown or hidden based on device size.
+    Only one contact box is shown at a given time.
+
+
+*/
+.contact-box {
     text-align: center;
     font-size: 14px;
     vertical-align: middle;
 }
 
-.section-contact i {
+.contact-box i {
     font-size: 24px;
     text-decoration: none;
     vertical-align: text-bottom;
 }
-.section-contact .contact-link {
+
+.contact-box .contact-link {
     display: block;
     line-height: 48px;
 }
 
-.section-contact .contact-link:hover {
-    /* background-color: #ECEFF1; */
-}
-
-.header .section-contact {
+.header .contact-box {
     display: none;
 }
 
-.main .section-contact {
+.main .contact-box {
     background-color: #607D8B;
 }
 
-.main .section-contact .contact-link {
+.main .contact-box .contact-link {
     color: white;
 }
 
@@ -194,8 +234,10 @@ Brand
 
     Banner
 
-*/
+    A banner image
 
+
+*/
 .section-banner {
     background-image: url("../images/banner_2400.jpg");
     background-position: center center;
@@ -207,27 +249,98 @@ Brand
 
 /**
 
+    Projects
+
+    Cards containing project info and project image.
+    Elevates on hover.
+
+
+*/
+.section-projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.project-article {
+    width: 29%;
+    min-width: 320px;
+    box-sizing: border-box;
+    border: 1px solid #CFD8DC;
+    margin: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: box-shadow 300ms ease-in;
+}
+
+.project-article:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.project-content {
+    padding: 12px;
+}
+
+.project-title {
+    margin: 0;
+}
+
+.project-description {
+
+}
+
+.project-link {
+    display: block;
+    line-height: 36px;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+}
+
+/**
+
+About
 
 */
 
-.section-projects{
-    padding: 0 24px; 
-}
 
-.projects-container {
+.section-about {
     display: flex;
     flex-flow: row wrap;
-    /* justify-content:space-around; */
+    padding: 24px;
+    justify-content: center;
 }
 
-.projects-article {
-    width: 256px;
-    height: 265px;
-    border: 1px solid #CFD8DC;
-    margin: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.about-content {
+    /* width: 50%; */
+    max-width: 600px;
+    min-width: 250px;
 }
 
-.projects-article:hover {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+.about-image {
+    /* width: 50%; */
+    max-width: 320px;
+    min-width: 200px;
+}
+
+.about-image img {
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+
+
+/**
+
+Footer
+
+*/
+
+.footer {
+    /* background-color: #CFD8DC; */
+    text-align: center;
+    padding: 32px 24px;
 }
