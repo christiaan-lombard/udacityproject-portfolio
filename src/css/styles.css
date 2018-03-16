@@ -68,7 +68,7 @@ a:hover {
 }
 
 .section.dark {
-    background-color: #546E7A;
+    background-color: #78909C;
     color: white;
 }
 
@@ -377,4 +377,5 @@ p.lead {
     /* background-color: #CFD8DC; */
     text-align: center;
     padding: 32px 24px;
+    border-top: 1px solid #CFD8DC;
 }
