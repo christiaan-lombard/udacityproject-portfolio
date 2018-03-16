@@ -115,7 +115,7 @@ a:hover {
 }
 
 .header .title {
-    font-size: 36x;
+    font-size: 36px;
     text-align: center;
     flex: 1 1 auto;
     margin: 0;
@@ -123,7 +123,7 @@ a:hover {
     line-height: 36px;
 }
 
-.brand .brand-title small {
+.header .title small {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -144,7 +144,6 @@ a:hover {
     display: flex;
     flex-flow: row wrap;
     list-style:  none;
-    justify-content: space-evenly;
     align-content:  stretch;
     padding: 0;
     margin: 0;
