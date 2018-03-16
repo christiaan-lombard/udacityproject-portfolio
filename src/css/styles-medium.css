@@ -2,9 +2,7 @@
 
     Medium Styles
 
-    min-width: 580px
-
-    Targets medium devices.
+    Targets 580-919px devices.
 
     Author: Christiaan Lombard
 
@@ -22,6 +20,10 @@
     width: 156px;
     height: 156px;
     margin-bottom: -36px;
+}
+
+.header .logo .logo-mask {
+    line-height: 124px;
 }
 
 .header .title {
@@ -55,4 +57,30 @@
     width: 300px;
     z-index: 10;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/**
+
+    Banner Overrides
+
+    Use a larger background image
+
+*/
+.section-banner {
+    background-image: url("../images/banner_920.jpg");
+}
+
+
+/**
+
+    Projects Section Overrides
+
+    Project articles narrower
+    so more fit in a row
+
+*/
+
+.project-article {
+    max-width: 250px;
 }

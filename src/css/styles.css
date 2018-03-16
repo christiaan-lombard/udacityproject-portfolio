@@ -6,6 +6,8 @@
     styles-medium, styles-large and styles-xlarge
     for large device overrides.
 
+    Breakpoints at 580px, 920px, 1200px
+
     Author: Christiaan Lombard
 
 */
@@ -84,6 +86,10 @@ a:hover {
     border: none;
 }
 
+p.lead {
+    font-size: larger;
+}
+
 
 
 
@@ -107,11 +113,38 @@ a:hover {
 }
 
 .header .logo {
-    border-radius: 50%;
     padding: 12px;
     width: 128px;
     height: 128px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.header .logo img{
+    border-radius: 50%;
+
+}
+
+.header .logo .logo-mask {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 104px;
+    font-size: 60px;
+    margin: 12px;
+    background-color: #607D8B;
+    color: white;
+    border-radius: 50%;
+    z-index: 99;
+    transition: opacity ease-in 200ms;
+}
+
+.header .logo .logo-mask:hover {
+    opacity: 0;
 }
 
 .header .title {
@@ -238,7 +271,7 @@ a:hover {
 
 */
 .section-banner {
-    background-image: url("../images/banner_2400.jpg");
+    background-image: url("../images/banner_580.jpg");
     background-position: center center;
     background-size: cover;
     height: 300px;
@@ -253,6 +286,9 @@ a:hover {
     Cards containing project info and project image.
     Elevates on hover.
 
+    < 580px articles are up to 420px wide (1 col)
+    < 920px articles are up to 250px wide (2-3 col)
+
 
 */
 .section-projects {
@@ -263,8 +299,9 @@ a:hover {
 }
 
 .project-article {
-    width: 29%;
-    min-width: 320px;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 420px;
     box-sizing: border-box;
     border: 1px solid #CFD8DC;
     margin: 12px;
@@ -278,6 +315,7 @@ a:hover {
 
 .project-content {
     padding: 12px;
+    flex: 1 1 auto;
 }
 
 .project-title {
@@ -289,7 +327,7 @@ a:hover {
     line-height: 36px;
 }
 
-.project-image {
+.project-image img {
     display: block;
     width: 100%;
 }

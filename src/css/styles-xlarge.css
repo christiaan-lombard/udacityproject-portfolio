@@ -2,9 +2,7 @@
 
     X-Large Styles
 
-    min-width: 1200px
-
-    Targets large devices.
+    Targets > 1200px devices.
 
     Author: Christiaan Lombard
 
@@ -19,7 +17,6 @@
     and the contact box inside the header
     is revealed.
 
-
 */
 .header .contact-box {
     display: block;
@@ -31,4 +28,15 @@
 
 .main .contact-box {
     display: none;
+}
+
+/**
+
+    Banner Overrides
+
+    Use a larger background image
+
+*/
+.section-banner {
+    background-image: url("../images/banner_1200.jpg");
 }

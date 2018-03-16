@@ -2,9 +2,7 @@
 
     Large Styles
 
-    min-width: 920px
-
-    Targets large devices.
+    Targets 920-1200px devices.
 
     Author: Christiaan Lombard
 
@@ -27,6 +25,10 @@
     width: 128px;
     height: 128px;
     margin-bottom: 0;
+}
+
+.header .logo .logo-mask {
+    line-height: 104px;
 }
 
 .header .nav {
@@ -54,3 +56,15 @@
     height: 400px;
 }
 
+/**
+
+    Projects Section Overrides
+
+    Project articles narrower
+    so more fit in a row
+
+*/
+
+.project-article {
+    max-width: 350px;
+}

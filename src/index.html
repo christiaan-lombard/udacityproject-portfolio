@@ -25,7 +25,11 @@
     <header id="header" class="header brand contain">
 
         <!-- Logo, Title and Slogan -->
-        <img class="logo" src="images/bw_christiaan.jpg" alt="Handsome Man">
+        <div class="logo">
+            <img src="images/bw_christiaan.jpg" alt="Handsome Man">
+            <h1 class="logo-mask">CL</h1>
+        </div>
+
         <h1 class="title">Christiaan Lombard<br><small>Web Artisan</small></h1>
 
         <!--
@@ -44,7 +48,7 @@
         <!-- Main Navigation -->
         <nav class="nav">
             <ul class="nav-tabs">
-                <li><a href="#header" class="active">Home</a></li>
+                <li><a href="#header" class="active">Intro</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">About Me</a></li>
             </ul>
@@ -89,21 +93,23 @@
             <article class="project-article">
 
                 <div class="project-content">
-                    <h3 class="project-title">Entertainment Center</h3>
+                    <h3 class="project-title">Yousemble</h3>
                     <p class="project-description">
-                        Curabitur ullamcorper ultricies nisi. Nam eget dui.
-                        Etiam rhoncus. Maecenas tempus, tellus eget condimentum
-                        rhoncus, sem quam semper libero, sit amet
-                        adipiscing sem neque sed ipsum.
-                        <br><small>Photo by Slava Keyzman on Unsplash</small>
+                        During my employment at Yousemble I rebuilt their backend
+                        software to more effectively run and automate
+                        their client website containers, domains and DNS, handle
+                        subscription payments and invoicing - controlling
+                        a PHP (Laravel) API with AngularJS admin client.
                     </p>
-                    <a href="" class="project-link">
-                        <i class="fa fa-github" aria-hidden="true">&nbsp;</i> /christiaanlombard
-                    </a>
                 </div>
 
-                <img src="http://via.placeholder.com/320x240"
-                        alt="Project Image" class="project-image">
+                <a href="https://www.yousemble.com/" target="_blank">
+                    <picture class="project-image">
+                        <source media="(min-width: 920px)" srcset="images/yousemble_420.png">
+                        <source media="(min-width: 580px)" srcset="images/yousemble_250.png">
+                        <img src="images/yousemble_420.png" alt="Cultivate Crop Intelligence">
+                    </picture>
+                </a>
 
             </article>
 
@@ -111,40 +117,43 @@
             <article class="project-article">
 
                 <div class="project-content">
-                    <h3 class="project-title">Entertainment Center</h3>
+                    <h3 class="project-title">Particle Gravity</h3>
                     <p class="project-description">
-                        Lorem ipsum dolor sit amet, consectetuer
-                        adipiscing elit. Aenean commodo ligula eget dolor.
-                        <br><small>Photo by Kevin Bhagat on Unsplash</small>
+                        An HTML Canvas illustrating the effect of Newton's Universal Law of Gravitation on some particles.
+                        <br><small>* Now in Beta 0.0.001</small>
                     </p>
-                    <a href="" class="project-link">
-                        <i class="fa fa-github" aria-hidden="true">&nbsp;</i> /christiaanlombard
+                    <a href="https://github.com/pubfunc/particle-gravity" class="project-link">
+                        <i class="fa fa-github" aria-hidden="true">&nbsp;</i> pubfunc/particle-gravity
                     </a>
                 </div>
 
-                <img src="http://via.placeholder.com/320x240"
-                        alt="Project Image" class="project-image">
-
+                <picture class="project-image">
+                    <source media="(min-width: 920px)" srcset="images/particle_gravity_420.png">
+                    <source media="(min-width: 580px)" srcset="images/particle_gravity_250.png">
+                    <img src="images/particle_gravity_420.png" alt="Cultivate Crop Intelligence">
+                </picture>
             </article>
 
             <!-- Project 3 -->
             <article class="project-article">
 
                 <div class="project-content">
-                    <h3 class="project-title">Entertainment Center</h3>
+                    <h3 class="project-title">Culteva</h3>
                     <p class="project-description">
-                        Donec vitae sapien ut libero venenatis faucibus.
-                        Nullam quis ante. Etiam sit amet orci eget eros
-                        faucibus tincidunt. Duis leo.
-                        <br><small>Photo by Luca Bravo on Unsplash</small>
+                        Culteva serves researchers in their
+                        pursuit to identify and compare the
+                        genotypic and phenotypic characteristics
+                         of plant material.
+                        <br><small>In development</small>
                     </p>
-                    <a href="" class="project-link">
-                        <i class="fa fa-github" aria-hidden="true">&nbsp;</i> /christiaanlombard
-                    </a>
                 </div>
-
-                <img src="http://via.placeholder.com/320x240"
-                        alt="Project Image" class="project-image">
+                <a href="https://culteva.pro/">
+                    <picture class="project-image">
+                        <source media="(min-width: 920px)" srcset="images/culteva.png">
+                        <source media="(min-width: 580px)" srcset="images/culteva_250.png">
+                        <img src="images/culteva.png" alt="Cultivate Crop Intelligence">
+                    </picture>
+                </a>
 
             </article>
 
@@ -156,37 +165,26 @@
         <!-- About Section -->
         <article class="section section-about contain dark">
 
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title">About Me</h2>
 
             <div class="about-content">
 
-                <!-- TODO: replace about content -->
-
-                <p>
-                    Aenean vulputate eleifend tellus. Aenean leo ligula,
-                    porttitor eu, consequat vitae, eleifend ac, enim.
-                    Aliquam lorem ante, dapibus in, viverra quis, feugiat
-                    a, tellus. Phasellus viverra nulla ut metus varius
-                    laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-                    ultricies nisi vel augue. Curabitur ullamcorper
-                    ultricies nisi. Nam eget dui.
+                <p class="lead">
+                    Tinkerer by nature, the engineering arts have
+                    always interested me.
                 </p>
                 <p>
-                    Etiam rhoncus. Maecenas tempus, tellus eget condimentum
-                    rhoncus, sem quam semper libero, sit amet adipiscing
-                    sem neque sed ipsum. Nam quam nunc, blandit vel,
-                    luctus pulvinar, hendrerit id, lorem. Maecenas nec
-                    odio et ante tincidunt tempus. Donec vitae sapien
-                    ut libero venenatis faucibus. Nullam quis ante. Etiam
-                    sit amet orci eget eros faucibus tincidunt. Duis leo.
-                    Sed fringilla mauris sit amet nibh. Donec sodales
-                    sagittis magna. Sed consequat, leo eget bibendum
-                    sodales, augue velit cursus nunc.
+                    I am detailed oriented and
+                    strive to create good quality, robust software.
+                    Every now and then I get my hands dirty in graphic design
+                    but I am mostly interested solving data- and
+                    efficiency-oriented problems.
                 </p>
+                <!-- TODO: Write more about me -->
             </div>
 
             <div class="about-image">
-                <img src="http://via.placeholder.com/512x512" alt="About Image">
+                <img src="images/tinker.jpg" alt="About Image">
             </div>
 
 
