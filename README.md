@@ -1,5 +1,25 @@
 # Udacity Project - Portfolio
 
+This is my project submission for the Udacity Fullstack Developer Nanodegree, Portfolio Project,
+Fundamentals module.
+
+## Features
+
+ - A simple portolio website
+ - Responsive layout using media queries
+ - Responsive images using the picture tag
+ - Readable HTML using semantic tags
+
+
+## Install & Run
+
+Clone this repository:
+
+```
+git clone https://github.com/christiaan-lombard/udacityproject-portfolio
+```
+
+Open the main HTML file, `src/index.html`:
 
 
 ## Udacity Project Specifications
