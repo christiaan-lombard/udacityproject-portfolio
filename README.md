@@ -21,6 +21,26 @@ git clone https://github.com/christiaan-lombard/udacityproject-portfolio
 
 Open the main HTML file, `src/index.html`:
 
+## Screenshots
+
+*Small Screen*
+
+![](screenshots/intro_small.png)
+
+*Medium Screen*
+
+![](screenshots/intro_med.png)
+
+*Large Screen*
+
+![](screenshots/intro_large.png)
+
+*X-Large Screen*
+
+![](screenshots/intro_xlarge.png)
+
+
+
 
 ## Udacity Project Specifications
 
